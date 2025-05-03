@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5958a10787.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav class="navbar">
+            <img src="Images/header-img.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Portfolio's</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="Home">
+            <div class="header-text">
+                <p>AI Enthusiast</p>
+                <h1>Hi, I'm <br><span>Satyanarayan</span> Mohapatro <br>From Pune, India</h1>
+            </div>
+            <div class="gif">
+                <img src="https://cdn.dribbble.com/users/1162077/screenshots/3848914/programmer.gif">
+            </div>
+        </div>
+    </div>
+</div>
+<!----------about----------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/Passport.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>An enthusiastic fourth-year B.Tech (Hons.) CSE student at MIT ADT University, Pune, specializing in AI and Edge
+                    Computing. Passionate about advancing cutting-edge skills and leveraging professional networks to connect with
+                    industry leaders and peers. Dedicated to applying academic insights and a competitive mindset to excel in
+                    technology-driven initiatives.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills',event)">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience',event)">Experience</p>
+                    <p class="tab-links" onclick="opentab('education',event)">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming Languages:</span><br>Python, C/C++, Java, MYSQL, HTML, CSS, JavaScript.</li>
+                        <li><span>AI/ML Tools & Libraries:</span><br>Scikit-learn, TensorFlow, NLTK, LangChain, NLP Techniques, Python Libraries (NumPy, Pandas, Matplotlib, Seaborn).</li>
+                        <li><span>Tools & Technologies :</span><br>Git, GitHub, Bootstrap, AWS, Streamlit, Figma, FlutterFlow, Anaconda, Microsoft Word, Excel, PowerPoint</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Apr 2024 - Sep 2024 [6 mos]</span><br>Member of Technical Team - (GDSC MIT ADT)</li>
+                        <li><span>Nov 2023 - Jul 2024 [9 mos]</span><br>Member of Content Team - (Synapse AI)</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Aug 2022 - Sep 2026</span><br>MIT Art, Design & Technology University</li>
+                        <li><span>Mar 2022</span><br>Smt. Subhadrabai Ramchandra Bhumkar Junior College</li>
+                        <li><span>Apr 2020</span><br>New Times International School</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!----------Services----------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Portfolio's</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2><b>ML-Portfolio</b></h2>
+                <p>This section is currently under development. Stay tuned for updates!</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-terminal"></i>
+                <h2><b>DL-Portfolio</b></h2>
+                <p>This section is currently under development. Stay tuned for updates!</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-file-code"></i>
+                <h2><b>EC- Portfolio</b></h2>
+                <p>This section is currently under development. Stay tuned for updates!</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!----------portfolio----------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/Project-1.png">
+                <div class="layer">
+                    <h3><b>Project-1</b></h3>
+                    <p>Developed an ML pipeline (XGBoost, scikit-learn) with NLP (DistilBERT) and LLMs (LangChain) for lead scoring, sentiment analysis, and personalized follow-ups, integrated into a CRM-ready, modular system.</p>
+                    <a href="https://github.com/Satya-Mohapatro/Customer_Sales_Enquiry_GenAI"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/Project-2.png">
+                <div class="layer">
+                    <h3><b>Project-2</b></h3>
+                    <p>RaktSetu is an AI-powered platform designed to address critical challenges in blood donation and supply management. The platform connects blood donors and recipients in real time, offering a seamless, efficient, and secure solution for lifesaving support.</p>
+                    <a href="https://github.com/Satya-Mohapatro/Blood_Bank_Management_System"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/Project-3.png">
+                <div class="layer">
+                    <h3><b>Project-3</b></h3>
+                    <p>WellTrack is a cutting-edge government application designed to combat malnutrition by leveraging advanced technology to monitor and track nutritional statuses of individuals. Available in both mobile and desktop versions, WellTrack ensures accessibility and convenience for users across various platforms.</p>
+                    <a href="https://github.com/Satya-Mohapatro/WellTrack_Web_App"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/Satya-Mohapatro" class="btn">See more</a>  
+    </div>
+</div>
+<!----------contact----------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1>
+                <a href="mailto:satyaamohapatro@gmail.com" class="email-link"><i class="fa-solid fa-paper-plane"></i> satyaamohapatro@gmail.com</a>
+                <p><i class="fa-solid fa-location-dot"></i>Pune, Maharashtra, India</p>
+                <p><i class="fa-solid fa-phone"></i>(+91)9322574610</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/satyanarayan-mohapatro-95508825a/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/satyaaahhh_18/"><i class="fa-brands fa-instagram"></i></i></a>
+                    <a href="https://github.com/Satya-Mohapatro"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="https://drive.google.com/file/d/1UkBLnEB50yGW6gzh0RGTGPyFDwwqnSpg/view?usp=drive_link" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit"class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+                <div id="loading-spinner" style="display: none;">
+                    <i class="fa fa-spinner fa-spin"></i> Submitting...
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © 2025 Satyanarayan. Made with <i class="fas fa-heart"></i> by Satya. All rights reserved.</p>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
