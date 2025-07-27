@@ -59,10 +59,10 @@ A sleek and responsive personal portfolio website built using **HTML**, **CSS**,
 ### 🔹 About Me + Tabs  
 ![About](./images/SS2.png)
 
-### 🔹 Portfolio Section  
+### 🔹 Skills Section  
 ![Projects](./images/SS3.png)
 
-### 🔹 project Section  
+### 🔹 Portfolio Section  
 ![Contact](./images/SS4.png)
 
 
