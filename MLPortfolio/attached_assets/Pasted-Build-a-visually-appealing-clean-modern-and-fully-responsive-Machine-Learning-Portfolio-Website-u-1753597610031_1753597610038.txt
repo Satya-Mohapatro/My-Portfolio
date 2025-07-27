@@ -1,0 +1,85 @@
+Build a visually appealing, clean, modern, and fully responsive Machine Learning Portfolio Website using HTML, CSS, JavaScript, and **animation frameworks like AOS (Animate on Scroll), GSAP, or Lottie** for interactive ML-themed effects.
+
+🧾 Folder Structure:
+- index.html
+- style.css
+- script.js
+- /images/
+- /animations/ (optional JSON for Lottie)
+
+---
+
+🎯 Website Purpose:
+Showcase ML projects categorized by algorithm type (Supervised and Unsupervised), each with animated project cards and interactive features.
+
+---
+
+🔹 Sticky Navbar:
+- Navigation links: Home, About, Algorithms
+- Logo or initials on the left
+- Highlight current section on scroll
+- Smooth scrolling with animation
+
+---
+
+🏠 Hero Section:
+- Full name and tagline: **“ML Projects by Algorithm”**
+- Animated typewriter text rotating between:
+  “Supervised Learning”, “Unsupervised Learning”, “End-to-End ML Pipelines”, “Model Deployment”
+- Buttons:
+  - View Projects
+  - Download Resume
+- Optional: Lottie animation of ML model, data flowing, or neural networks
+
+---
+
+👤 About Section:
+- Short 2–3 paragraph introduction explaining:
+  - Your passion for ML
+  - Technologies used (e.g., Scikit-learn, Pandas, Matplotlib, Streamlit)
+  - What the portfolio covers
+- Optional: Add AOS or GSAP scroll reveal animation for text and visuals
+
+---
+
+🧠 **Algorithms Section** (Core):
+Split into two animated subsections using tabs or accordion:
+
+### 🔷 Supervised Learning
+Include these project cards:
+1. **Linear Regression** – House Price Prediction
+2. **Logistic Regression** – Breast Cancer Prediction
+3. **K-Nearest Neighbors (KNN)** – Handwritten Digit Recognition
+4. **Support Vector Machine (SVM)** – Email Spam Classifier
+5. **Decision Tree** – Loan Approval Prediction
+6. **XGBoost / LightGBM** – Credit Card Fraud Detection
+
+### 🔶 Unsupervised Learning
+Include these project cards:
+7. **K-Means Clustering** – Customer Segmentation  
+8. **Hierarchical Clustering** – Document Similarity Clustering
+
+---
+
+📦 Each Project Card Includes:
+- Algorithm Name
+- Project Title
+- Dataset used
+- Short description
+- Tech stack (badges/icons)
+- GitHub & Live Demo buttons
+- 🔁 Animations:
+  - Hover zoom
+  - Card fade-in/slide-up on scroll (using AOS/GSAP)
+  - Optional: Lottie icon (e.g., clustering, regression line)
+
+---
+
+✨ Additional Features:
+- Font Awesome icons
+- Use AOS, GSAP, or Lottie for micro-interactions
+- Responsive layout (media queries for mobile/tablet)
+- Dark mode toggle (optional)
+- Smooth scroll between sections
+- Placeholder text, links, and images
+- Use only HTML, CSS, JavaScript (+ allowed animation libraries)

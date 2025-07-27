@@ -3,171 +3,628 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website</title>
+    <title>MyPortfolio</title>
+    <meta name="description" content="Personal portfolio of Satyanarayan Mohapatro - AI enthusisat specializing in Artificial intelligence & Edge Computing">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/5958a10787.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<div id="header">
-    <div class="container">
-        <nav class="navbar">
-            <img src="Images/header-img.png" class="logo">
-            <ul id="sidemenu">
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Portfolio's</a></li>
-                <li><a href="#portfolio">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+    <!-- Theme Toggle Button -->
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">MyPortfolio.</a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#portfolio" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
             </ul>
-            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-        </nav>
-        <div class="Home">
-            <div class="header-text">
-                <p>AI Enthusiast</p>
-                <h1>Hi, I'm <br><span>Satyanarayan</span> Mohapatro <br>From Pune, India</h1>
-            </div>
-            <div class="gif">
-                <img src="https://cdn.dribbble.com/users/1162077/screenshots/3848914/programmer.gif">
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
         </div>
-    </div>
-</div>
-<!----------about----------->
-<div id="about">
-    <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="Images/Passport.jpg">
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <!-- AI/ML Animated Background -->
+        <div class="hero-animations">
+            <!-- Neural Network Animation -->
+            <div class="neural-network">
+                <div class="neural-node" style="top: 20%; left: 10%;"></div>
+                <div class="neural-node" style="top: 40%; left: 15%;"></div>
+                <div class="neural-node" style="top: 60%; left: 12%;"></div>
+                <div class="neural-node" style="top: 30%; left: 50%;"></div>
+                <div class="neural-node" style="top: 50%; left: 55%;"></div>
+                <div class="neural-node" style="top: 70%; left: 48%;"></div>
+                <div class="neural-node" style="top: 25%; left: 85%;"></div>
+                <div class="neural-node" style="top: 45%; left: 88%;"></div>
+                <div class="neural-node" style="top: 65%; left: 82%;"></div>
+                
+                <!-- Neural Connections -->
+                <svg class="neural-connections" viewBox="0 0 100 100" preserveAspectRatio="none">
+                    <line class="neural-connection" x1="10" y1="20" x2="50" y2="30" />
+                    <line class="neural-connection" x1="15" y1="40" x2="55" y2="50" />
+                    <line class="neural-connection" x1="12" y1="60" x2="48" y2="70" />
+                    <line class="neural-connection" x1="50" y1="30" x2="85" y2="25" />
+                    <line class="neural-connection" x1="55" y1="50" x2="88" y2="45" />
+                    <line class="neural-connection" x1="48" y1="70" x2="82" y2="65" />
+                </svg>
             </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">About Me</h1>
-                <p>An enthusiastic fourth-year B.Tech (Hons.) CSE student at MIT ADT University, Pune, specializing in AI and Edge
-                    Computing. Passionate about advancing cutting-edge skills and leveraging professional networks to connect with
-                    industry leaders and peers. Dedicated to applying academic insights and a competitive mindset to excel in
-                    technology-driven initiatives.</p>
-                <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills',event)">Skills</p>
-                    <p class="tab-links" onclick="opentab('experience',event)">Experience</p>
-                    <p class="tab-links" onclick="opentab('education',event)">Education</p>
+            
+            <!-- AI Code Snippets -->
+            <div class="ai-code-snippets">
+                <div class="ai-code-snippet" data-delay="0s">
+                    <span class="code-keyword">import</span> <span class="code-variable">tensorflow</span> <span class="code-keyword">as</span> <span class="code-variable">tf</span>
                 </div>
-                <div class="tab-contents active-tab" id="skills">
-                    <ul>
-                        <li><span>Programming Languages:</span><br>Python, C/C++, Java, MYSQL, HTML, CSS, JavaScript.</li>
-                        <li><span>AI/ML Tools & Libraries:</span><br>Scikit-learn, TensorFlow, NLTK, LangChain, NLP Techniques, Python Libraries (NumPy, Pandas, Matplotlib, Seaborn).</li>
-                        <li><span>Tools & Technologies :</span><br>Git, GitHub, Bootstrap, AWS, Streamlit, Figma, FlutterFlow, Anaconda, Microsoft Word, Excel, PowerPoint</li>
-                    </ul>
+                <div class="ai-code-snippet" data-delay="2s">
+                    <span class="code-variable">model</span> = <span class="code-function">Sequential</span>()
                 </div>
-                <div class="tab-contents" id="experience">
-                    <ul>
-                        <li><span>Apr 2024 - Sep 2024 [6 mos]</span><br>Member of Technical Team - (GDSC MIT ADT)</li>
-                        <li><span>Nov 2023 - Jul 2024 [9 mos]</span><br>Member of Content Team - (Synapse AI)</li>
-                    </ul>
+                <div class="ai-code-snippet" data-delay="4s">
+                    <span class="code-variable">predictions</span> = <span class="code-variable">model</span>.<span class="code-function">predict</span>(<span class="code-variable">X</span>)
                 </div>
-                <div class="tab-contents" id="education">
-                    <ul>
-                        <li><span>Aug 2022 - Sep 2026</span><br>MIT Art, Design & Technology University</li>
-                        <li><span>Mar 2022</span><br>Smt. Subhadrabai Ramchandra Bhumkar Junior College</li>
-                        <li><span>Apr 2020</span><br>New Times International School</li>
-                    </ul>
+                <div class="ai-code-snippet" data-delay="6s">
+                    <span class="code-comment"># Training neural network...</span>
                 </div>
+                <div class="ai-code-snippet" data-delay="1s">
+                    <span class="code-keyword">from</span> <span class="code-variable">sklearn</span> <span class="code-keyword">import</span> <span class="code-variable">neural_network</span>
+                </div>
+            </div>
+            
+            <!-- Data Flow Animation -->
+            <div class="data-flow">
+                <div class="data-particle" style="animation-delay: 0s;"></div>
+                <div class="data-particle" style="animation-delay: 1s;"></div>
+                <div class="data-particle" style="animation-delay: 2s;"></div>
+                <div class="data-particle" style="animation-delay: 3s;"></div>
+                <div class="data-particle" style="animation-delay: 4s;"></div>
+            </div>
+            
+            <!-- AI Icons -->
+            <div class="ai-icons">
+                <i class="fas fa-brain ai-icon" data-delay="0.5s"></i>
+                <i class="fas fa-robot ai-icon" data-delay="1.5s"></i>
+                <i class="fas fa-microchip ai-icon" data-delay="2.5s"></i>
+                <i class="fas fa-network-wired ai-icon" data-delay="3.5s"></i>
+                <i class="fas fa-chart-line ai-icon" data-delay="4.5s"></i>
+                <i class="fab fa-python ai-icon" data-delay="5.5s"></i>
+            </div>
+            
+            <!-- Matrix Effect -->
+            <div class="matrix-rain">
+                <div class="matrix-column" style="left: 10%; animation-delay: 0s;">01010</div>
+                <div class="matrix-column" style="left: 25%; animation-delay: 1s;">11001</div>
+                <div class="matrix-column" style="left: 40%; animation-delay: 2s;">10110</div>
+                <div class="matrix-column" style="left: 55%; animation-delay: 3s;">01011</div>
+                <div class="matrix-column" style="left: 70%; animation-delay: 4s;">11010</div>
+                <div class="matrix-column" style="left: 85%; animation-delay: 5s;">00101</div>
             </div>
         </div>
-    </div>
-</div>
-<!----------Services----------->
-<div id="services">
-    <div class="container">
-        <h1 class="sub-title">My Portfolio's</h1>
-        <div class="services-list">
-            <div>
-                <i class="fa-solid fa-code"></i>
-                <h2><b>ML-Portfolio</b></h2>
-                <p>This section is currently under development. Stay tuned for updates!</p>
-                <a href="#">Learn more</a>
-            </div>
-            <div>
-                <i class="fa-solid fa-terminal"></i>
-                <h2><b>DL-Portfolio</b></h2>
-                <p>This section is currently under development. Stay tuned for updates!</p>
-                <a href="#">Learn more</a>
-            </div>
-            <div>
-                <i class="fa-solid fa-file-code"></i>
-                <h2><b>EC- Portfolio</b></h2>
-                <p>This section is currently under development. Stay tuned for updates!</p>
-                <a href="#">Learn more</a>
-            </div>
-        </div>
-    </div>
-</div>
-<!----------portfolio----------->
-<div id="portfolio">
-    <div class="container">
-        <h1 class="sub-title">My Projects</h1>
-        <div class="work-list">
-            <div class="work">
-                <img src="Images/Project-1.png">
-                <div class="layer">
-                    <h3><b>Project-1</b></h3>
-                    <p>Developed an ML pipeline (XGBoost, scikit-learn) with NLP (DistilBERT) and LLMs (LangChain) for lead scoring, sentiment analysis, and personalized follow-ups, integrated into a CRM-ready, modular system.</p>
-                    <a href="https://github.com/Satya-Mohapatro/Customer_Sales_Enquiry_GenAI"><i class="fa-solid fa-up-right-from-square"></i></a>
+        
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Hi, I'm <br><span class="highlight">Satyanarayan Mohapatro</span></h1>
+                <div class="hero-subtitle">
+                    <span>I'm an Aspiring </span>
+                    <span class="typewriter" id="typewriter"></span>
+                    <span class="cursor">|</span>
                 </div>
-            </div>
-            <div class="work">
-                <img src="Images/Project-2.png">
-                <div class="layer">
-                    <h3><b>Project-2</b></h3>
-                    <p>RaktSetu is an AI-powered platform designed to address critical challenges in blood donation and supply management. The platform connects blood donors and recipients in real time, offering a seamless, efficient, and secure solution for lifesaving support.</p>
-                    <a href="https://github.com/Satya-Mohapatro/Blood_Bank_Management_System"><i class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="Images/Project-3.png">
-                <div class="layer">
-                    <h3><b>Project-3</b></h3>
-                    <p>WellTrack is a cutting-edge government application designed to combat malnutrition by leveraging advanced technology to monitor and track nutritional statuses of individuals. Available in both mobile and desktop versions, WellTrack ensures accessibility and convenience for users across various platforms.</p>
-                    <a href="https://github.com/Satya-Mohapatro/WellTrack_Web_App"><i class="fa-solid fa-up-right-from-square"></i></a>
+                <p class="hero-description">
+                    Final-year B.Tech CSE student specializing in AI and Edge Computing, with strong skills in data science, machine learning, NLP, and data visualization. Driven to solve real-world problems as a Data Scientist or Analyst.
+                <div class="hero-buttons">
+                    <a href="https://drive.google.com/file/d/1_TX1Lf3IiEo58k2RR8YHWAoMZKX_25oB/view?usp=drive_link" download class="btn btn-primary" target="_blank">
+                        <i class="fas fa-download"></i>
+                        Resume
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i>
+                        Contact Me
+                    </a>
                 </div>
             </div>
         </div>
-        <a href="https://github.com/Satya-Mohapatro" class="btn">See more</a>  
-    </div>
-</div>
-<!----------contact----------->
-<div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact me</h1>
-                <a href="mailto:satyaamohapatro@gmail.com" class="email-link"><i class="fa-solid fa-paper-plane"></i> satyaamohapatro@gmail.com</a>
-                <p><i class="fa-solid fa-location-dot"></i>Pune, Maharashtra, India</p>
-                <p><i class="fa-solid fa-phone"></i>(+91)9322574610</p>
-                <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/satyanarayan-mohapatro-95508825a/"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://www.instagram.com/satyaaahhh_18/"><i class="fa-brands fa-instagram"></i></i></a>
-                    <a href="https://github.com/Satya-Mohapatro"><i class="fa-brands fa-github"></i></a>
-                </div>
-                <a href="https://drive.google.com/file/d/1UkBLnEB50yGW6gzh0RGTGPyFDwwqnSpg/view?usp=drive_link" download class="btn btn2">Download CV</a>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
             </div>
-            <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your name" required>
-                    <input type="email" name="Email" placeholder="Your Email" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit"class="btn btn2">Submit</button>
-                </form>
-                <span id="msg"></span>
-                <div id="loading-spinner" style="display: none;">
-                    <i class="fa fa-spinner fa-spin"></i> Submitting...
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="Images/Passport.jpg" alt="Satya" class="profile-img">
+                </div>
+                <div class="about-text">
+                    <div class="about-bio">
+                        <p>
+                            I’m an enthusiastic final-year B.Tech CSE student at MIT ADT University, Pune, specializing in AI and Edge Computing, with hands-on experience in data science and advanced analytics.
+                        </p>
+                        <p>
+                            My journey in technology began with a passion to harness the power of data, which led me to develop strong expertise in machine learning, NLP, and statistical modeling. I enjoy transforming complex datasets into actionable insights, solving real-world challenges, and building impactful AI solutions that drive meaningful change.
+
+                        </p>
+                        <p>
+                            Constantly learning and evolving, I stay at the forefront of AI trends and emerging technologies. Beyond academics and projects, I thrive in collaborative environments, actively participate in data science communities, and enjoy sharing knowledge that helps others grow.
+                        </p>
+                    </div>
+                    
+                    <div class="about-tabs">
+                        <div class="tab-buttons">
+                            <button class="tab-btn active" data-tab="experience">
+                                <i class="fas fa-briefcase"></i>
+                                Experience
+                            </button>
+                            <button class="tab-btn" data-tab="education">
+                                <i class="fas fa-graduation-cap"></i>
+                                Education
+                            </button>
+                        </div>
+                        
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="experience">
+                                <div class="timeline-item">
+                                    <div class="timeline-date">2025 - Present</div>
+                                    <div class="timeline-content">
+                                        <h4>Data Science Intern</h4>
+                                        <p class="company">The Developers Arena</p>
+                                        <p>Participated in a 6-month internship focused on real-world data science projects, training modules, and performance evaluations. Gained hands-on experience in data analysis and model development under professional mentorship.</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-date">07/2025 - 08/2025</div>
+                                    <div class="timeline-content">
+                                        <h4> Data Analytics - Job simulation</h4>
+                                        <p class="company">Deloitte Australia Virtual Experience (Forage)</p>
+                                        <p>Completed a virtual simulation on data analysis and forensic workflows. Built Tableau dashboards to analyze factory downtime and used Excel for employee equality score analysis.</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-date">05/2025 - 06/2025</div>
+                                    <div class="timeline-content">
+                                        <h4>Data Science Job Simulation</h4>
+                                        <p class="company">British Airways Virtual Experience (Forage)</p>
+                                        <p>Completed a simulation highlighting the role of data science in aviation. Scraped and analyzed customer reviews and built a predictive model to identify key factors influencing purchasing behavior.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="tab-pane" id="education">
+                                <div class="timeline-item">
+                                    <div class="timeline-date">2022 - 2026</div>
+                                    <div class="timeline-content">
+                                        <h4>Bachelor of Technology - BTech-CSE</h4>
+                                        <p class="company">MIT Art, Design & Technology University</p>
+                                        <p>Graduating with honors (CGPA: 8.62). Specialized in artificial intelligence and edge computing. Completed projects in machine learning, data analytics, and cross-platform application development.</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-date">2020 - 2022</div>
+                                    <div class="timeline-content">
+                                        <h4>12th(Science)</h4>
+                                        <p class="company">Smt. Subhadrabai Ramchandra Bhumkar Junior College</p>
+                                        <p>Completed 12th (Science) with 86.4%, building a strong foundation in Mathematics, Physics, and Computer Science.</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-date">2018 - 2020</div>
+                                    <div class="timeline-content">
+                                        <h4>Grade 10th</h4>
+                                        <p class="company">New Times International School</p>
+                                        <p>Completed 10th grade with 83.9%, with a strong academic focus in science and mathematics.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="copyright">
-        <p>Copyright © 2025 Satyanarayan. Made with <i class="fas fa-heart"></i> by Satya. All rights reserved.</p>
-    </div>
-</div>
-<script src="script.js"></script>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Core Technical Skills</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%"></div>
+                            </div>
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">SQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%"></div>
+                            </div>
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">C/C++</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70%"></div>
+                            </div>
+                            <span class="skill-percentage">70%</span>
+                        </div>
+
+                        <div class="skill-item">
+                            <span class="skill-name">ML</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90%"></div>
+                            </div>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">NLP</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%"></div>
+                            </div>
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Gen-AI</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="50%"></div>
+                            </div>
+                            <span class="skill-percentage">50%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-tools"></i>
+                        <h3>Tools & Frameworks</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-name">GitHub</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90%"></div>
+                            </div>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Microsoft Power BI</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90%"></div>
+                            </div>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Figma</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90%"></div>
+                            </div>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Streamlit</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75%"></div>
+                            </div>
+                            <span class="skill-percentage">75%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">AWS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="50%"></div>
+                            </div>
+                            <span class="skill-percentage">50%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-user-tie"></i>
+                        <h3>Soft Skills</h3>
+                    </div>
+                    <div class="soft-skills">
+                        <span class="soft-skill-badge">Problem Solving</span>
+                        <span class="soft-skill-badge">Teamwork & Collaboration</span>
+                        <span class="soft-skill-badge">Communication</span>
+                        <span class="soft-skill-badge">Project Management</span>
+                        <span class="soft-skill-badge">Creativity & Innovation</span>
+                        <span class="soft-skill-badge">Time Management</span>
+                        <span class="soft-skill-badge">Adaptability</span>
+                        <span class="soft-skill-badge">Growth Mindset</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">My Portfolio</h2>
+            <div class="portfolio-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images\MLportfolio.png" alt="ML Portfolio">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="MLPortfolio\index.html" class="project-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">ML Portfolio</h3>
+                        <p class="project-description">
+                            Machine learning application that analyzes sales data and predicts future trends 
+                            using advanced algorithms and interactive visualizations.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Scikit-learn</span>
+                            <span class="tech-tag">ML</span>
+                            <span class="tech-tag">Streamlit</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images\DLportfolio.png" alt="DL Portfolio">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#portfolio" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">DL Portfolio</h3>
+                        <p class="project-description">
+                            This section is currently under development. Stay tuned for updates!
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">Keras</span>
+                            <span class="tech-tag">OpenCV</span>
+                            <span class="tech-tag">DL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/ECportfolio.png" alt="EC Portfolio">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Edge Computing Portfolio</h3>
+                        <p class="project-description">
+                            This section is currently under development. Stay tuned for updates!
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Arduino</span>
+                            <span class="tech-tag">Raspi</span>
+                            <span class="tech-tag">Jetson Nano</span>
+                            <span class="tech-tag">Nano BLE</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/Project-1.png" alt="Project-1">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/Satya-Mohapatro/Customer_Sales_Enquiry_GenAI" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Follow-Up</h3>
+                        <p class="project-description">
+                            Developed an ML pipeline (XGBoost, scikit-learn) with NLP (DistilBERT) and LLMs (LangChain) for lead scoring, sentiment analysis, and personalized follow-ups, integrated into a CRM-ready, modular system.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">LLM</span>
+                            <span class="tech-tag">XGBoost</span>
+                            <span class="tech-tag">NLP</span>
+                            <span class="tech-tag">Langchain</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/project-2.png" alt="project-2">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/Satya-Mohapatro/End-to-End-Cricket-Data-Analytics-Using-Python-and-Power-BI" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Cricket Data Analytics</h3>
+                        <p class="project-description">
+                            Scraped real-time T20 World Cup data and built interactive Power BI dashboards to analyze player stats, team performance, and match trends. Delivered actionable insights on top performers and tournament highlights.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">PowerBI</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Bright Data</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/Project-3.png" alt="Project-3">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/Satya-Mohapatro/WellTrack_Web_App" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">WellTrack</h3>
+                        <p class="project-description">
+                            WellTrack is a cutting-edge government application designed to combat malnutrition by leveraging advanced technology to monitor and track nutritional statuses of individuals. Available in both mobile and desktop versions.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Dart</span>
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">XChart</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Work Together</h3>
+                    <p>
+                        I'm always interested in new opportunities and exciting projects. 
+                        Whether you have a question, want to collaborate, or just want to say hi, 
+                        feel free to reach out!
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>satyaamohapatro@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 9322574610</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Pune, India</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/Satya-Mohapatro" class="social-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/satyanarayan-mohapatro-95508825a/" class="social-link" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:satyaamohapatro@gmail.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://www.instagram.com/satyaaahhh_18/" class="social-link" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contact-form" action="https://formspree.io/f/xdkdgrgy" method="POST">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                            <label for="subject">Subject</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Satya. All rights reserved.</p>
+                <p>Made with <i class="fas fa-heart"></i> using vanilla HTML, CSS & JavaScript</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>

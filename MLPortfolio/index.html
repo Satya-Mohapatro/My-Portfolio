@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML Portfolio - Machine Learning Projects by Algorithm</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Dark Mode Toggle -->
+    <div class="theme-toggle" id="themeToggle">
+        <i class="fas fa-moon"></i>
+    </div>
+
+    <!-- Sticky Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <div class="logo-text-container">
+                    <span class="logo-text">ML</span>
+                    <span class="logo-accent">Portfolio</span>
+                </div>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#technologies" class="nav-link">Technologies</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#algorithms" class="nav-link">Algorithms</a>
+                </li>
+            </ul>
+            <div class="nav-toggle" id="navToggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+                <h1 class="hero-title">
+                    <span class="gradient-text">Satyanarayan</span>
+                </h1>
+                <div class="hero-subtitle">
+                    <span class="animated-text">AI Enthusiast</span>
+                    <div class="expertise-showcase">
+                        <div class="floating-badge" data-skill="Supervised Learning">
+                            <i class="fa-solid fa-brain"></i>
+                            <span>Supervised Learning</span>
+                            <div class="skill-particles"></div>
+                        </div>
+                        <div class="floating-badge" data-skill="Unsupervised Learning">
+                            <i class="fas fa-search"></i>
+                            <span>Unsupervised Learning</span>
+                            <div class="skill-particles"></div>
+                        </div>
+                        <div class="floating-badge" data-skill="Model Deployment">
+                            <i class="fas fa-rocket"></i>
+                            <span>Model Deployment</span>
+                            <div class="skill-particles"></div>
+                        </div>
+                    </div>
+                </div>
+                <p class="hero-description">
+                    Exploring the depths of machine learning through hands-on projects, from supervised learning algorithms to unsupervised pattern discovery.
+                </p>
+
+            </div>
+            <div class="hero-visual" data-aos="fade-left" data-aos-delay="600">
+                <div class="ml-animation">
+                    <div class="floating-elements">
+                        <div class="data-point" data-value="1"></div>
+                        <div class="data-point" data-value="0"></div>
+                        <div class="data-point" data-value="1"></div>
+                        <div class="data-point" data-value="0"></div>
+                        <div class="data-point" data-value="1"></div>
+                        <div class="data-point" data-value="0"></div>
+                    </div>
+                    <div class="ml-brain">
+                        <div class="brain-core">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="pulse-ring"></div>
+                        <div class="pulse-ring"></div>
+                        <div class="pulse-ring"></div>
+                    </div>
+                    <div class="algorithm-cards">
+                        <div class="algo-card">ML</div>
+                        <div class="algo-card">AI</div>
+                        <div class="algo-card">DL</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies Section -->
+    <section id="technologies" class="technologies">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Technologies & Tools</h2>
+                <p class="section-subtitle">Powerful technologies used to build intelligent ML solutions</p>
+            </div>
+            <div class="tech-categories">
+                <!-- Programming Languages -->
+                <div class="tech-category" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="category-title">
+                        <i class="fas fa-code"></i>
+                        Programming & ML Tools
+                    </h3>
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-brain"></i>
+                            <span>Scikit-learn</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-file-archive"></i>
+                            <span>Joblib, Pickle</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ML Libraries -->
+                <div class="tech-category" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="category-title">
+                        <i class="fas fa-brain"></i>
+                        ML Libraries
+                    </h3>
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <i class="fas fa-project-diagram"></i>
+                            <span>Pipelines</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-chart-bar"></i>
+                            <span>Pandas</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-calculator"></i>
+                            <span>NumPy</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-sliders-h"></i>
+                            <span>Scaler, Encoder</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data Visualization -->
+                <div class="tech-category" data-aos="fade-up" data-aos-delay="300">
+                    <h3 class="category-title">
+                        <i class="fas fa-chart-line"></i>
+                        Data Visualization
+                    </h3>
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <i class="fas fa-chart-area"></i>
+                            <span>Matplotlib</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-palette"></i>
+                            <span>Seaborn</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-chart-pie"></i>
+                            <span>Plotly</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Deployment -->
+                <div class="tech-category" data-aos="fade-up" data-aos-delay="400">
+                    <h3 class="category-title">
+                        <i class="fas fa-rocket"></i>
+                        Deployment & Tools
+                    </h3>
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <i class="fas fa-desktop"></i>
+                            <span>Streamlit</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-book"></i>
+                            <span>Jupyter</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-microsoft"></i>
+                            <span>VS Code</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Algorithms Section -->
+    <section id="algorithms" class="algorithms">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">ML Projects by Algorithm</h2>
+                <p class="section-subtitle">Explore implementations across supervised and unsupervised learning</p>
+            </div>
+            
+            <!-- Algorithm Tabs -->
+            <div class="algorithm-tabs" data-aos="fade-up" data-aos-delay="200">
+                <button class="tab-button active" data-tab="supervised">
+                    <i class="fas fa-user-graduate"></i>
+                    Supervised Learning
+                </button>
+                <button class="tab-button" data-tab="unsupervised">
+                    <i class="fas fa-eye-slash"></i>
+                    Unsupervised Learning
+                </button>
+            </div>
+
+            <!-- Supervised Learning Projects -->
+            <div class="tab-content active" id="supervised">
+                <div class="projects-grid">
+                    <!-- Linear Regression -->
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="project-header">
+                            <div class="project-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h3 class="project-title">Linear Regression</h3>
+                        </div>
+                        <h4 class="project-name">House Price Prediction</h4>
+                        <p class="project-dataset">Boston Housing Dataset</p>
+                        <p class="project-description">
+                            Implemented linear regression to predict house prices based on features like location, size, and amenities. 
+                            Includes feature engineering, outlier detection, and model evaluation with R² and RMSE metrics.
+                        </p>
+                        <div class="tech-stack">
+                            <span class="tech-badge"><i class="fab fa-python"></i> Python</span>
+                            <span class="tech-badge"><i class="fas fa-chart-bar"></i> Pandas</span>
+                            <span class="tech-badge"><i class="fas fa-brain"></i> Scikit-learn</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://github.com/Satya-Mohapatro/House-Price-Prediction" class="btn btn-small btn-primary">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Logistic Regression -->
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="project-header">
+                            <div class="project-icon">
+                                <i class="fas fa-divide"></i>
+                            </div>
+                            <h3 class="project-title">Logistic Regression</h3>
+                        </div>
+                        <h4 class="project-name">Breast Cancer Prediction</h4>
+                        <p class="project-dataset">Wisconsin Breast Cancer Dataset</p>
+                        <p class="project-description">
+                            Binary classification model to predict malignant vs benign breast cancer cases. 
+                            Features comprehensive data preprocessing, feature selection, and model interpretation with confusion matrix analysis.
+                        </p>
+                        <div class="tech-stack">
+                            <span class="tech-badge"><i class="fab fa-python"></i> Python</span>
+                            <span class="tech-badge"><i class="fas fa-chart-line"></i> Matplotlib</span>
+                            <span class="tech-badge"><i class="fas fa-brain"></i> Scikit-learn</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://github.com/Satya-Mohapatro/Breast-Cancer-Prediction" class="btn btn-small btn-primary">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- K-Nearest Neighbors -->
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="project-header">
+                            <div class="project-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3 class="project-title">K-Nearest Neighbors</h3>
+                        </div>
+                        <h4 class="project-name">Handwritten Digit Recognition</h4>
+                        <p class="project-dataset">MNIST Dataset</p>
+                        <p class="project-description">
+                            Multi-class classification using KNN algorithm to recognize handwritten digits (0-9). 
+                            Includes distance metric optimization, k-value tuning, and visualization of decision boundaries.
+                        </p>
+                        <div class="tech-stack">
+                            <span class="tech-badge"><i class="fab fa-python"></i> Python</span>
+                            <span class="tech-badge"><i class="fas fa-database"></i> NumPy</span>
+                            <span class="tech-badge"><i class="fas fa-brain"></i> Scikit-learn</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://github.com/Satya-Mohapatro/Handwritten-Digit-Recognition" class="btn btn-small btn-primary">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Support Vector Machine -->
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="project-header">
+                            <div class="project-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h3 class="project-title">Support Vector Machine</h3>
+                        </div>
+                        <h4 class="project-name">Email Spam Classifier</h4>
+                        <p class="project-dataset">Enron Email Dataset</p>
+                        <p class="project-description">
+                            SVM implementation for binary text classification to identify spam emails. 
+                            Features TF-IDF vectorization, kernel selection, hyperparameter tuning, and ROC curve analysis.
+                        </p>
+                        <div class="tech-stack">
+                            <span class="tech-badge"><i class="fab fa-python"></i> Python</span>
+                            <span class="tech-badge"><i class="fas fa-font"></i> NLTK</span>
+                            <span class="tech-badge"><i class="fas fa-brain"></i> Scikit-learn</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://github.com/Satya-Mohapatro/Email-Spam-Classifier" class="btn btn-small btn-primary">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Decision Tree -->
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="500">
+                        <div class="project-header">
+                            <div class="project-icon">
+                                <i class="fas fa-sitemap"></i>
+                            </div>
+                            <h3 class="project-title">Decision Tree</h3>
+                        </div>
+                        <h4 class="project-name">Loan Approval Prediction</h4>
+                        <p class="project-dataset">Loan Prediction Dataset</p>
+                        <p class="project-description">
+                            Decision tree classifier to predict loan approval based on applicant demographics and financial history. 
+                            Includes tree visualization, feature importance analysis, and pruning techniques to prevent overfitting.
+                        </p>
+                        <div class="tech-stack">
+                            <span class="tech-badge"><i class="fab fa-python"></i> Python</span>
+                            <span class="tech-badge"><i class="fas fa-chart-bar"></i> Pandas</span>
+                            <span class="tech-badge"><i class="fas fa-brain"></i> Scikit-learn</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://github.com/Satya-Mohapatro/Loan-Approval-Prediction" class="btn btn-small btn-primary">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- XGBoost -->
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="600">
+                        <div class="project-header">
+                            <div class="project-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <h3 class="project-title">XGBoost</h3>
+                        </div>
+                        <h4 class="project-name">Credit Card Fraud Detection</h4>
+                        <p class="project-dataset">Credit Card Fraud Dataset</p>
+                        <p class="project-description">
+                            Advanced ensemble method using XGBoost for fraud detection in credit card transactions. 
+                            Handles imbalanced data with SMOTE, implements cross-validation, and achieves high precision-recall performance.
+                        </p>
+                        <div class="tech-stack">
+                            <span class="tech-badge"><i class="fab fa-python"></i> Python</span>
+                            <span class="tech-badge"><i class="fas fa-rocket"></i> XGBoost</span>
+                            <span class="tech-badge"><i class="fas fa-chart-line"></i> Matplotlib</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://github.com/Satya-Mohapatro/Credit-Card-Fraud-Detection" class="btn btn-small btn-primary">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Unsupervised Learning Projects -->
+            <div class="tab-content" id="unsupervised">
+                <div class="projects-grid">
+                    <!-- K-Means Clustering -->
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="project-header">
+                            <div class="project-icon">
+                                <i class="fas fa-circle-nodes"></i>
+                            </div>
+                            <h3 class="project-title">K-Means Clustering</h3>
+                        </div>
+                        <h4 class="project-name">Customer Segmentation</h4>
+                        <p class="project-dataset">Mall Customer Dataset</p>
+                        <p class="project-description">
+                            Unsupervised clustering algorithm to segment customers based on purchasing behavior and demographics. 
+                            Includes elbow method for optimal k selection, cluster interpretation, and business insights visualization.
+                        </p>
+                        <div class="tech-stack">
+                            <span class="tech-badge"><i class="fab fa-python"></i> Python</span>
+                            <span class="tech-badge"><i class="fas fa-chart-bar"></i> Pandas</span>
+                            <span class="tech-badge"><i class="fas fa-brain"></i> Scikit-learn</span>
+                            <span class="tech-badge"><i class="fas fa-chart-line"></i> Seaborn</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://github.com/Satya-Mohapatro/Customer-Segmentation" class="btn btn-small btn-primary">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Hierarchical Clustering -->
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="project-header">
+                            <div class="project-icon">
+                                <i class="fas fa-project-diagram"></i>
+                            </div>
+                            <h3 class="project-title">Hierarchical Clustering</h3>
+                        </div>
+                        <h4 class="project-name">Document Similarity Clustering</h4>
+                        <p class="project-dataset">Reuters News Dataset</p>
+                        <p class="project-description">
+                            Agglomerative hierarchical clustering for grouping similar documents based on content. 
+                            Features TF-IDF text preprocessing, dendrogram visualization, and optimal cluster number determination.
+                        </p>
+                        <div class="tech-stack">
+                            <span class="tech-badge"><i class="fab fa-python"></i> Python</span>
+                            <span class="tech-badge"><i class="fas fa-font"></i> NLTK</span>
+                            <span class="tech-badge"><i class="fas fa-brain"></i> Scikit-learn</span>
+                            <span class="tech-badge"><i class="fas fa-chart-line"></i> Matplotlib</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://github.com/Satya-Mohapatro/Document-Similarity-Clustering" class="btn btn-small btn-primary">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GSAP JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    
+    <!-- AOS JavaScript -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
