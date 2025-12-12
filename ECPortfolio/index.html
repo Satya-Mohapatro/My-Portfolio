@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EC Portfolio - Edge Computing Projects</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome (for fallback icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- SVG icons definitions -->
+  <svg style="display:none" aria-hidden="true">
+    <symbol id="icon-edge" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M3 6.5L12 2l9 4.5V17.5L12 22 3 17.5V6.5zM12 4.2L5 7.2v9.6L12 19.8l7-2.999V7.2L12 4.2z"></path>
+    </symbol>
+
+    <symbol id="icon-jetson" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M4 6h16v12H4zM6 8v8h12V8z"></path>
+    </symbol>
+
+    <symbol id="icon-raspberry" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M7 3h10v2H7zM12 6a6 6 0 100 12 6 6 0 000-12z"></path>
+    </symbol>
+
+    <symbol id="icon-nano" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M3 5h18v14H3zM6 8v8h12V8z"></path>
+    </symbol>
+
+    <symbol id="icon-arduino" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M12 2l9 4v12l-9 4-9-4V6l9-4zM9 8h6v8H9z"></path>
+    </symbol>
+
+    <symbol id="icon-tag" viewBox="0 0 24 24"><path fill="currentColor" d="M20 10V4l-6 6 6 6zM3 3v6l9 9 6-6L9 3H3z"/></symbol>
+    <symbol id="icon-close" viewBox="0 0 24 24"><path fill="currentColor" d="M18 6L6 18M6 6l12 12"/></symbol>
+    <symbol id="icon-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 00-3.16 19.49c.5.09.68-.22.68-.49v-1.72c-2.78.61-3.37-1.34-3.37-1.34-.45-1.16-1.1-1.47-1.1-1.47-.9-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.64-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.26-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0112 6.8c.85.004 1.71.115 2.51.336 1.9-1.29 2.74-1.02 2.74-1.02.55 1.38.2 2.39.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.59.69.49A10 10 0 0012 2z"/></symbol>
+  </svg>
+
+  <!-- Theme Toggle -->
+  <div class="theme-toggle" id="themeToggle" title="Toggle theme"><i class="fas fa-moon"></i></div>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo" id="navLogo" role="button" aria-label="EdgeDev home">
+        <div class="logo-icon"><svg width="20" height="20"><use xlink:href="#icon-edge"></use></svg></div>
+        <div class="logo-text-container">
+          <span class="logo-text">Edge</span><span class="logo-accent">Dev</span>
+        </div>
+      </div>
+
+      <ul class="nav-menu" id="navMenu">
+        <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+        <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+        <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+      </ul>
+
+      <div class="nav-toggle" id="navToggle" aria-label="Toggle nav">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-container container">
+      <div class="hero-content" data-aos="fade-up">
+        <h1 class="hero-title"><span class="gradient-text">Building Intelligent Edge Systems with AI, TinyML & Real-Time Computing.</span></h1>
+        <p class="hero-description">Deploying optimized AI models on Jetson Nano, Raspberry Pi, Arduino Nano BLE Sense, and Arduino UNO — for low-latency, low-power applications.</p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary"> <i class="fa-solid fa-grid"></i> View Projects</a>
+          <a href="#skills" class="btn btn-secondary"> <i class="fa-solid fa-circle-info"></i> Explore Skills</a>
+        </div>
+
+        <div class="device-tiles" data-aos="fade-up" data-aos-delay="300">
+          <button class="device-tile" data-device="jetson">
+            <svg class="tile-icon" width="28" height="28"><use xlink:href="#icon-jetson"></use></svg>
+            <span>Jetson Nano</span>
+          </button>
+
+          <button class="device-tile" data-device="raspberry">
+            <svg class="tile-icon" width="28" height="28"><use xlink:href="#icon-raspberry"></use></svg>
+            <span>Raspberry Pi</span>
+          </button>
+
+          <button class="device-tile" data-device="nano">
+            <svg class="tile-icon" width="28" height="28"><use xlink:href="#icon-nano"></use></svg>
+            <span>Nano BLE Sense</span>
+          </button>
+
+          <button class="device-tile" data-device="arduino">
+            <svg class="tile-icon" width="28" height="28"><use xlink:href="#icon-arduino"></use></svg>
+            <span>Arduino UNO</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="hero-visual" data-aos="fade-left" data-aos-delay="400">
+        <div class="ml-animation">
+          <div class="device-ring">
+            <div class="device-core"><svg width="36" height="36"><use xlink:href="#icon-edge"></use></svg></div>
+            <div class="pulse-ring"></div><div class="pulse-ring"></div><div class="pulse-ring"></div>
+          </div>
+
+          <div class="algo-cards">
+            <div class="algo-card">TinyML</div>
+            <div class="algo-card">ONNX</div>
+            <div class="algo-card">Quant</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="tech-section">
+    <div class="container">
+      <div class="tech-header" data-aos="fade-up">
+        <div class="tech-header-icon"><svg width="44" height="44"><use xlink:href="#icon-edge"></use></svg></div>
+        <h2>Tech Stack & Skills</h2>
+        <p>Technologies and tools I work with to build intelligent edge solutions</p>
+      </div>
+
+      <div class="tech-grid" data-aos="fade-up" data-aos-delay="150">
+        <div class="tech-card">
+          <div class="tech-card-header"><svg width="28" height="28"><use xlink:href="#icon-jetson"></use></svg><span>Edge Hardware</span></div>
+          <div class="tech-items">
+            <div class="tech-item">Arduino UNO</div>
+            <div class="tech-item">Raspberry Pi</div>
+            <div class="tech-item">Nano BLE Sense</div>
+            <div class="tech-item">Jetson Nano</div>
+            <div class="tech-item">Google Coral</div>
+          </div>
+        </div>
+
+        <div class="tech-card">
+          <div class="tech-card-header"><svg width="28" height="28"><use xlink:href="#icon-nano"></use></svg><span>TinyML / AI / ML</span></div>
+          <div class="tech-items">
+            <div class="tech-item">Edge Impulse</div>
+            <div class="tech-item">TensorFlow Lite</div>
+            <div class="tech-item">PyTorch / Mobile</div>
+            <div class="tech-item">ONNX</div>
+            <div class="tech-item">TensorRT</div>
+            <div class="tech-item">Quantization</div>
+          </div>
+        </div>
+
+        <div class="tech-card">
+          <div class="tech-card-header"><svg width="28" height="28"><use xlink:href="#icon-arduino"></use></svg><span>IoT & Sensors</span></div>
+          <div class="tech-items">
+            <div class="tech-item">MQTT</div>
+            <div class="tech-item">GPIO</div>
+            <div class="tech-item">IMU</div>
+            <div class="tech-item">DHT11</div>
+            <div class="tech-item">Cameras</div>
+            <div class="tech-item">Gas Sensors</div>
+          </div>
+        </div>
+
+        <div class="tech-card">
+          <div class="tech-card-header"><svg width="28" height="28"><use xlink:href="#icon-tag"></use></svg><span>Programming / Tools</span></div>
+          <div class="tech-items">
+            <div class="tech-item">Python</div>
+            <div class="tech-item">C/C++</div>
+            <div class="tech-item">Linux</div>
+            <div class="tech-item">FastAPI</div>
+            <div class="tech-item">Docker</div>
+            <div class="tech-item">Git</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="dl-projects-section">
+    <div class="container">
+      <div class="dl-section-header" data-aos="fade-up">
+        <h2 class="dl-section-title">Edge Projects by Device</h2>
+        <p class="dl-section-subtitle">Explore my edge computing projects by device category</p>
+      </div>
+
+      <div class="dl-project-grid" data-aos="fade-up" data-aos-delay="150">
+        <div class="dl-card device-card" data-device="jetson">
+          <div class="dl-card-icon"><svg width="36" height="36"><use xlink:href="#icon-jetson"></use></svg></div>
+          <h3 class="dl-card-title">Jetson Nano Projects</h3>
+          <p class="dl-card-dataset">4 Projects</p>
+          <div class="card-cta">→</div>
+        </div>
+
+        <div class="dl-card device-card" data-device="raspberry">
+          <div class="dl-card-icon"><svg width="36" height="36"><use xlink:href="#icon-raspberry"></use></svg></div>
+          <h3 class="dl-card-title">Raspberry Pi Projects</h3>
+          <p class="dl-card-dataset">5 Projects</p>
+          <div class="card-cta">→</div>
+        </div>
+
+        <div class="dl-card device-card" data-device="nano">
+          <div class="dl-card-icon"><svg width="36" height="36"><use xlink:href="#icon-nano"></use></svg></div>
+          <h3 class="dl-card-title">Nano BLE (TinyML) Projects</h3>
+          <p class="dl-card-dataset">3 Projects</p>
+          <div class="card-cta">→</div>
+        </div>
+
+        <div class="dl-card device-card" data-device="arduino">
+          <div class="dl-card-icon"><svg width="36" height="36"><use xlink:href="#icon-arduino"></use></svg></div>
+          <h3 class="dl-card-title">Arduino UNO Projects</h3>
+          <p class="dl-card-dataset">4 Projects</p>
+          <div class="card-cta">→</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal (single dynamic modal) -->
+  <div id="projectsModal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="modalTitle">
+    <div class="modal-backdrop" data-close="true"></div>
+    <div class="modal-content" role="document" tabindex="-1">
+      <button class="modal-close" id="modalClose" aria-label="Close modal"><svg width="18" height="18"><use xlink:href="#icon-close"></use></svg></button>
+      <h2 id="modalTitle">Device Projects</h2>
+      <div id="modalDescription" class="modal-sub">Projects</div>
+
+      <div class="modal-grid" id="modalGrid"></div>
+    </div>
+  </div>
+
+  <!-- AOS + GSAP + Font/Libs -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>

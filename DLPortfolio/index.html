@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>DL Portfolio - Deep Learning Projects by Algorithm</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Dark Mode Toggle -->
+    <div class="theme-toggle" id="themeToggle" title="Toggle theme">
+        <i class="fas fa-moon"></i>
+    </div>
+
+    <!-- Sticky Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo" role="button" aria-label="Scroll to top">
+                <div class="logo-icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <div class="logo-text-container">
+                    <span class="logo-text">DL</span>
+                    <span class="logo-accent">Portfolio</span>
+                </div>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#technologies" class="nav-link">Technologies</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#algorithms" class="nav-link">Algorithms</a>
+                </li>
+            </ul>
+            <div class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+                <h3 class="hero-title">
+                    <span class="gradient-text">Satyanarayan</span>
+                </h3>
+                <div class="hero-subtitle">
+                    <span class="animated-text">Deep Learning Practitioner</span>
+                    <div class="expertise-showcase">
+                        <div class="floating-badge" data-skill="Convolutional Neural Networks">
+                            <i class="fa-solid fa-fire"></i>
+                            <span>TensorFlow</span>
+                            <div class="skill-particles"></div>
+                        </div>
+                        <div class="floating-badge" data-skill="Sequence Models">
+                            <i class="fas fa-stream"></i>
+                            <span>Keras</span>
+                            <div class="skill-particles"></div>
+                        </div>
+                        <div class="floating-badge" data-skill="Transformers & Attention">
+                            <i class="fas fa-atom"></i>
+                            <span>PyTorch</span>
+                            <div class="skill-particles"></div>
+                        </div>
+                    </div>
+                </div>
+                <p class="hero-description">
+                    Building and deploying deep learning systems — computer vision, sequence models, object detection and transformer-based NLP. Portfolio includes implementation, training, evaluation, and deployment-ready artifacts.
+                </p>
+            </div>
+
+            <div class="hero-visual" data-aos="fade-left" data-aos-delay="600">
+                <div class="ml-animation">
+                    <div class="floating-elements">
+                        <div class="data-point" data-value="1"></div>
+                        <div class="data-point" data-value="0"></div>
+                        <div class="data-point" data-value="1"></div>
+                        <div class="data-point" data-value="0"></div>
+                        <div class="data-point" data-value="1"></div>
+                        <div class="data-point" data-value="0"></div>
+                    </div>
+                    <div class="ml-brain">
+                        <div class="brain-core">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="pulse-ring"></div>
+                        <div class="pulse-ring"></div>
+                        <div class="pulse-ring"></div>
+                    </div>
+                    <div class="algorithm-cards">
+                        <div class="algo-card">ANN</div>
+                        <div class="algo-card">CNN</div>
+                        <div class="algo-card">RNN</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies Section -->
+    <section id="technologies" class="tech-section">
+    <div class="container">
+
+        <div class="tech-header">
+            <div class="tech-header-icon">
+                <img src="assets/icons/transformer.svg" alt="">
+            </div>
+            <h2>Technologies & Tools</h2>
+            <p>Powerful technologies used to build intelligent deep learning solutions</p>
+        </div>
+
+        <div class="tech-grid">
+
+            <!-- Deep Learning Frameworks -->
+            <div class="tech-card">
+                <div class="tech-card-header">
+                    <img src="assets/icons/ann.svg" alt="">
+                    <span>Deep Learning Frameworks</span>
+                </div>
+
+                <div class="tech-items">
+                    <div class="tech-item">PyTorch</div>
+                    <div class="tech-item">TensorFlow</div>
+                    <div class="tech-item">Keras</div>
+                    <div class="tech-item">TorchVision</div>
+                    <div class="tech-item">HuggingFace</div>
+                </div>
+            </div>
+
+            <!-- Computer Vision Tools -->
+            <div class="tech-card">
+                <div class="tech-card-header">
+                    <img src="assets/icons/cnn.svg" alt="">
+                    <span>Computer Vision Tools</span>
+                </div>
+
+                <div class="tech-items">
+                    <div class="tech-item">OpenCV</div>
+                    <div class="tech-item">Albumentations</div>
+                    <div class="tech-item">YOLOv8 (Ultralytics)</div>
+                    <div class="tech-item">Image Preprocessing</div>
+                </div>
+            </div>
+
+            <!-- NLP Tools -->
+            <div class="tech-card">
+                <div class="tech-card-header">
+                    <img src="assets/icons/seq2seq.svg" alt="">
+                    <span>NLP Tools</span>
+                </div>
+
+                <div class="tech-items">
+                    <div class="tech-item">Tokenizers</div>
+                    <div class="tech-item">Word Embeddings</div>
+                    <div class="tech-item">Seq2Seq Models</div>
+                    <div class="tech-item">Transformer Architectures</div>
+                </div>
+            </div>
+
+            <!-- Deployment Tools -->
+            <div class="tech-card">
+                <div class="tech-card-header">
+                    <img src="assets/icons/seq2seq.svg" alt="">
+                    <span>Deployment Tools</span>
+                </div>
+
+                <div class="tech-items">
+                    <div class="tech-item">FastAPI</div>
+                    <div class="tech-item">Streamlit</div>
+                    <div class="tech-item">TorchScript</div>
+                    <div class="tech-item">ONNX Runtime</div>
+                    <div class="tech-item">Jetson Nano</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </section>
+
+
+
+    <!-- Algorithms / Projects Section -->
+    <section id="algorithms" class="dl-projects-section">
+    <div class="container">
+        
+        <!-- Section Header -->
+        <div class="dl-section-header" data-aos="fade-up">
+            <h2 class="dl-section-title">DL Projects by Algorithm</h2>
+            <p class="dl-section-subtitle">
+                Explore implementations across neural network architectures and deep learning models
+            </p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="dl-filter-tabs" data-aos="fade-up" data-aos-delay="150">
+            <button class="dl-filter-btn active" data-filter="all">All Projects</button>
+            <button class="dl-filter-btn" data-filter="ann">ANN</button>
+            <button class="dl-filter-btn" data-filter="cnn">CNN</button>
+            <button class="dl-filter-btn" data-filter="lstm">LSTM</button>
+            <button class="dl-filter-btn" data-filter="seq2seq">Seq2Seq</button>
+            <button class="dl-filter-btn" data-filter="transformer">Transformers</button>
+            <button class="dl-filter-btn" data-filter="detection">Object Detection</button>
+        </div>
+
+        <!-- Project Grid -->
+        <div class="dl-project-grid">
+
+            <!-- ANN Project -->
+            <div class="dl-card" data-category="ann">
+                <div class="dl-card-icon">
+                    <img src="assets/icons/ann.svg" alt="ANN Icon" class="dl-svg-icon" />
+                </div>
+                <span class="dl-tag dl-tag-ann">Artificial Neural Networks</span>
+                <h3 class="dl-card-title">MNIST Digit Classification (ANN)</h3>
+                <p class="dl-card-dataset">Dataset: <a href="#">MNIST Dataset</a></p>
+                <p class="dl-card-desc">
+                    Basic feed-forward ANN classifier for handwritten digit recognition with dropout and batch normalization.
+                </p>
+                <div class="dl-tech-list">
+                    <span>Python</span><span>NumPy</span><span>PyTorch</span>
+                </div>
+                <a href="https://github.com/Satya-Mohapatro/MNIST-Digit-Classification-using-Multilayer-Perceptron-MLP-" class="dl-card-btn">View on GitHub</a>
+            </div>
+
+            <!-- ANN 2 -->
+            <div class="dl-card" data-category="ann">
+                <div class="dl-card-icon">
+                    <img src="assets/icons/ann.svg" alt="ANN Icon" class="dl-svg-icon" />
+                </div>
+                
+                <span class="dl-tag dl-tag-ann">Artificial Neural Networks</span>
+                <h3 class="dl-card-title">Customer Churn Prediction (ANN)</h3>
+                <p class="dl-card-dataset">Dataset: <a href="#">Telco Churn</a></p>
+                <p class="dl-card-desc">
+                    ANN for predicting customer churn using structured datasets, feature engineering, and precision-recall evaluation.
+                </p>
+                <div class="dl-tech-list">
+                    <span>Python</span><span>Pandas</span><span>TensorFlow</span>
+                </div>
+                <a href="https://github.com/Satya-Mohapatro/Customer-Churn-Prediction-using-Deep-Learning" class="dl-card-btn">View on GitHub</a>
+            </div>
+
+            <!-- CNN -->
+            <div class="dl-card" data-category="cnn">
+                <div class="dl-card-icon">
+                    <img src="assets/icons/cnn.svg" alt="ANN Icon" class="dl-svg-icon" />
+                </div>
+                <span class="dl-tag dl-tag-cnn">Convolutional Neural Networks</span>
+                <h3 class="dl-card-title">CIFAR-10 Image Classification (CNN)</h3>
+                <p class="dl-card-dataset">Dataset: <a href="#">CIFAR-10</a></p>
+                <p class="dl-card-desc">
+                    Custom CNN architecture for image classification with data augmentation, LR scheduling, and feature visualization.
+                </p>
+                <div class="dl-tech-list">
+                    <span>Python</span><span>PyTorch</span><span>TorchVision</span>
+                </div>
+                <a href="https://github.com/Satya-Mohapatro/CIFAR-10-Image-Classification-using-Custom-CNN" class="dl-card-btn">View on GitHub</a>
+            </div>
+
+            <!-- Transfer Learning -->
+            <div class="dl-card" data-category="cnn">
+                <div class="dl-card-icon">
+                    <img src="assets/icons/cnn.svg" alt="ANN Icon" class="dl-svg-icon" />
+                </div>
+                <span class="dl-tag dl-tag-cnn">Convolutional Neural Networks</span>
+                <h3 class="dl-card-title">Transfer Learning with ResNet/MobileNet</h3>
+                <p class="dl-card-dataset">Dataset: <a href="#">ImageNet</a></p>
+                <p class="dl-card-desc">
+                    Fine-tuning pretrained models including ResNet50, MobileNetV2, and EfficientNet for multi-class classification.
+                </p>
+                <div class="dl-tech-list">
+                    <span>Python</span><span>TensorFlow</span><span>Keras</span>
+                </div>
+                <a href="https://github.com/Satya-Mohapatro/Image-Classification-using-Transfer-Learning-ResNet50-Dogs-vs-Cats" class="dl-card-btn">View on GitHub</a>
+            </div>
+
+            <!-- YOLO -->
+            <div class="dl-card" data-category="detection">
+                <div class="dl-card-icon">
+                    <img src="assets/icons/yolo.svg" alt="ANN Icon" class="dl-svg-icon" />
+                </div>
+                <span class="dl-tag dl-tag-detection">Object Detection</span>
+                <h3 class="dl-card-title">YOLOv8 Object Detection</h3>
+                <p class="dl-card-dataset">Dataset: <a href="#">Custom Dataset</a></p>
+                <p class="dl-card-desc">
+                    YOLOv8 detection pipeline with training, evaluation, dataset prep, and real-time inference integration.
+                </p>
+                <div class="dl-tech-list">
+                    <span>Python</span><span>Ultralytics</span><span>OpenCV</span>
+                </div>
+                <a href="https://github.com/Satya-Mohapatro/YOLOv8-Object-Detection" class="dl-card-btn">View on GitHub</a>
+            </div>
+
+            <!-- LSTM -->
+            <div class="dl-card" data-category="lstm">
+                <div class="dl-card-icon">
+                    <img src="assets/icons/lstm.svg" alt="ANN Icon" class="dl-svg-icon" />
+                </div>
+                <span class="dl-tag dl-tag-lstm">Sequence Models</span>
+                <h3 class="dl-card-title">Stock Price Forecasting (LSTM)</h3>
+                <p class="dl-card-dataset">Dataset: <a href="#">Time Series Data</a></p>
+                <p class="dl-card-desc">
+                    Multi-layer LSTM for future price prediction using sliding window preprocessing and backtesting evaluation.
+                </p>
+                <div class="dl-tech-list">
+                    <span>Python</span><span>PyTorch</span><span>Pandas</span>
+                </div>
+                <a href="https://github.com/Satya-Mohapatro/Stock-Price-Forecasting-using-LSTM-Bi-LSTM" class="dl-card-btn">View on GitHub</a>
+            </div>
+
+            <!-- Seq2Seq -->
+            <div class="dl-card" data-category="seq2seq">
+                <div class="dl-card-icon">
+                    <img src="assets/icons/seq2seq.svg" alt="ANN Icon" class="dl-svg-icon" />
+                </div>
+                <span class="dl-tag dl-tag-seq">Sequence-to-Sequence</span>
+                <h3 class="dl-card-title">Machine Translation (Seq2Seq LSTM)</h3>
+                <p class="dl-card-dataset">Dataset: <a href="#">English–French</a></p>
+                <p class="dl-card-desc">
+                    Encoder–decoder LSTM with Bahdanau attention, teacher forcing, and beam search decoding.
+                </p>
+                <div class="dl-tech-list">
+                    <span>Python</span><span>PyTorch</span><span>NLTK</span>
+                </div>
+                <a href="https://github.com/Satya-Mohapatro/English-to-French-Neural-Machine-Translation-Seq2Seq-Attention-" class="dl-card-btn">View on GitHub</a>
+            </div>
+
+            <!-- Transformers -->
+            <div class="dl-card" data-category="transformer">
+                <div class="dl-card-icon">
+                    <img src="assets/icons/transformer.svg" alt="ANN Icon" class="dl-svg-icon" />
+                </div>
+                <span class="dl-tag dl-tag-transformer">Transformers & Attention</span>
+                <h3 class="dl-card-title">Text Summarization with Transformers</h3>
+                <p class="dl-card-dataset">Dataset: <a href="#">News Articles</a></p>
+                <p class="dl-card-desc">
+                    Summarization using T5/BART transformers with fine-tuning, ROUGE evaluation, and custom training loop.
+                </p>
+                <div class="dl-tech-list">
+                    <span>Python</span><span>Transformers</span><span>HuggingFace</span>
+                </div>
+                <a href="https://github.com/Satya-Mohapatro/Text-Summarization-with-Transformers-T5-BART-" class="dl-card-btn">View on GitHub</a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>

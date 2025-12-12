@@ -1,0 +1,17 @@
+
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+<g stroke="currentColor" stroke-width="18" fill="none">
+<rect x="60" y="200" width="140" height="120" rx="15">
+  <animate attributeName="stroke-opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite"/>
+</rect>
+<rect x="312" y="200" width="140" height="120" rx="15">
+  <animate attributeName="stroke-opacity" values="1;0.5;1" dur="2s" begin="1s" repeatCount="indefinite"/>
+</rect>
+<line x1="200" y1="260" x2="312" y2="260">
+  <animate attributeName="stroke-width" values="18;6;18" dur="1.5s" repeatCount="indefinite"/>
+</line>
+<polygon points="312,260 290,240 290,280" fill="currentColor">
+  <animateTransform attributeName="transform" type="translate" values="0 0; 10 0; 0 0" dur="1.5s" repeatCount="indefinite"/>
+</polygon>
+</g>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <linearGradient id="iotg" x1="0" x2="1"><stop offset="0" stop-color="#06b6d4"/><stop offset="1" stop-color="#0ea5e9"/></linearGradient>
+  </defs>
+  <rect x="6" y="6" width="108" height="108" rx="16" fill="#e8fafe"/>
+  <g transform="translate(12,12)">
+    <path d="M38 42a12 12 0 0 0-2 23h36a8 8 0 0 0 2-16 14 14 0 0 0-6-27 18 18 0 0 0-30 20" fill="url(#iotg)"/>
+    <path d="M60 80c6-8 14-12 20-14" stroke="#0ea5e9" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <circle cx="56" cy="56" r="4" fill="#fff"/>
+  </g>
+</svg>

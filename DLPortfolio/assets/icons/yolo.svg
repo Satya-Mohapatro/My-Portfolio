@@ -1,0 +1,12 @@
+
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+<rect x="80" y="120" width="280" height="240" stroke="currentColor" stroke-width="20" fill="none">
+  <animate attributeName="stroke-opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+</rect>
+<rect x="160" y="200" width="140" height="120" stroke="currentColor" stroke-width="20" fill="none">
+  <animate attributeName="y" values="200;210;200" dur="1.5s" repeatCount="indefinite"/>
+</rect>
+<circle cx="340" cy="150" r="20" stroke="currentColor" stroke-width="16" fill="none">
+  <animate attributeName="r" values="20;26;20" dur="2s" repeatCount="indefinite"/>
+</circle>
+</svg>

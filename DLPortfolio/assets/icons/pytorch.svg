@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128">
+<defs>
+<style>
+@keyframes pulse {
+  0% { transform: scale(1); opacity:1; }
+  50% { transform: scale(1.15); opacity:0.6; }
+  100% { transform: scale(1); opacity:1; }
+}
+.icon {
+  fill:#8b5cf6;
+  animation:pulse 2s infinite ease-in-out;
+  transform-origin:64px 64px;
+}
+</style>
+</defs>
+<circle cx="64" cy="64" r="50" fill="#1e1e2e"/>
+<rect class='icon' x='44' y='44' width='40' height='40' rx='8'/>
+</svg>

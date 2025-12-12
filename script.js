@@ -87,8 +87,10 @@ function initTypewriter() {
     const typewriterElement = document.getElementById('typewriter');
     const phrases = [
         'Data Scientist',
-        'Data Analyst',
+        'AI Engineer',
         'ML Engineer',
+        'NLP & GenAI Developer',
+        'Edge AI Developer',
         'Tech Visionary',
     ];
     

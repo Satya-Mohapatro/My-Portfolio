@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 160" width="240" height="160">
+  <defs>
+    <linearGradient id="g2" x1="0" x2="1"><stop offset="0" stop-color="#2a7a3a"/><stop offset="1" stop-color="#1b5b2a"/></linearGradient>
+    <linearGradient id="metal" x1="0" x2="1"><stop offset="0" stop-color="#b8c2c8"/><stop offset="1" stop-color="#6b7280"/></linearGradient>
+  </defs>
+  <rect rx="10" ry="10" x="8" y="8" width="224" height="144" fill="url(#g2)"/>
+  <!-- Broadcom SoC -->
+  <rect x="50" y="38" width="72" height="46" rx="6" fill="#0f172a"/>
+  <text x="86" y="60" font-size="8" fill="#9ca3af" font-family="sans-serif" text-anchor="middle">BCM</text>
+  <!-- GPIO pins (top) -->
+  <g fill="#111827">
+    <rect x="160" y="20" width="6" height="32" rx="1"/>
+    <rect x="168" y="20" width="6" height="32" rx="1"/>
+    <rect x="176" y="20" width="6" height="32" rx="1"/>
+    <rect x="184" y="20" width="6" height="32" rx="1"/>
+  </g>
+  <!-- HDMI / USB stack -->
+  <rect x="18" y="110" width="40" height="20" rx="3" fill="url(#metal)"/>
+  <rect x="60" y="110" width="40" height="20" rx="3" fill="url(#metal)"/>
+  <!-- composite connector -->
+  <circle cx="200" cy="110" r="6" fill="#f97316"/>
+  <!-- decorative chips -->
+  <rect x="140" y="60" width="34" height="12" rx="2" fill="#0b1220"/>
+  <!-- shadow -->
+  <rect x="8" y="140" width="224" height="8" rx="4" fill="rgba(0,0,0,0.18)"/>
+</svg>

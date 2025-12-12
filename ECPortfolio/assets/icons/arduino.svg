@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 150" width="260" height="150">
+  <defs>
+    <linearGradient id="g4" x1="0" x2="1"><stop offset="0" stop-color="#0b4aa6"/><stop offset="1" stop-color="#073b86"/></linearGradient>
+  </defs>
+  <rect rx="12" ry="12" x="8" y="8" width="244" height="134" fill="url(#g4)"/>
+  <!-- Atmega chip -->
+  <rect x="90" y="36" width="84" height="46" rx="6" fill="#0b0f1a"/>
+  <text x="132" y="64" font-size="8" fill="#9ca3af" font-family="sans-serif" text-anchor="middle">ATMEGA</text>
+  <!-- USB connector -->
+  <rect x="200" y="30" width="36" height="18" rx="3" fill="#b8c2c8"/>
+  <!-- power jack -->
+  <rect x="18" y="30" width="20" height="18" rx="3" fill="#9ca3af"/>
+  <!-- pin headers -->
+  <g fill="#081426">
+    <rect x="28" y="90" width="6" height="28" rx="1"/>
+    <rect x="36" y="90" width="6" height="28" rx="1"/>
+    <rect x="44" y="90" width="6" height="28" rx="1"/>
+    <rect x="52" y="90" width="6" height="28" rx="1"/>
+    <rect x="60" y="90" width="6" height="28" rx="1"/>
+  </g>
+</svg>

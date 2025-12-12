@@ -1,0 +1,15 @@
+
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+<g stroke="currentColor" stroke-width="18" fill="none">
+<circle cx="256" cy="128" r="40">
+  <animate attributeName="stroke-width" values="18;8;18" dur="2s" repeatCount="indefinite"/>
+</circle>
+<circle cx="128" cy="256" r="40"/>
+<circle cx="384" cy="256" r="40"/>
+<circle cx="256" cy="384" r="40"/>
+<line x1="256" y1="168" x2="128" y2="256"/>
+<line x1="256" y1="168" x2="384" y2="256"/>
+<line x1="256" y1="344" x2="128" y2="256"/>
+<line x1="256" y1="344" x2="384" y2="256"/>
+</g>
+</svg>

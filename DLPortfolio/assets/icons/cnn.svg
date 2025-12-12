@@ -1,0 +1,8 @@
+
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+<rect x="80" y="120" width="200" height="200" stroke="currentColor" stroke-width="18" fill="none">
+  <animateTransform attributeName="transform" type="rotate" values="0 180 220;5 180 220;0 180 220" dur="3s" repeatCount="indefinite"/>
+</rect>
+<rect x="140" y="180" width="200" height="200" stroke="currentColor" stroke-width="18" fill="none" opacity="0.8"/>
+<rect x="200" y="240" width="200" height="200" stroke="currentColor" stroke-width="18" fill="none" opacity="0.6"/>
+</svg>

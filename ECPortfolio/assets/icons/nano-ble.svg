@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 220" width="160" height="220">
+  <defs>
+    <linearGradient id="g3" x1="0" x2="1"><stop offset="0" stop-color="#cfeefe"/><stop offset="1" stop-color="#bfe7e7"/></linearGradient>
+    <linearGradient id="metal2" x1="0" x2="1"><stop offset="0" stop-color="#d1d5db"/><stop offset="1" stop-color="#9ca3af"/></linearGradient>
+  </defs>
+  <rect x="16" y="12" width="128" height="196" rx="12" fill="#e6f7f2" stroke="#bdebe2" />
+  <!-- main SoC -->
+  <rect x="44" y="40" width="72" height="44" rx="6" fill="#0b1220"/>
+  <!-- small sensor -->
+  <rect x="44" y="92" width="36" height="10" rx="3" fill="#0f172a"/>
+  <!-- pads -->
+  <g fill="#111827">
+    <rect x="28" y="130" width="8" height="6" rx="1"/>
+    <rect x="40" y="130" width="8" height="6" rx="1"/>
+    <rect x="52" y="130" width="8" height="6" rx="1"/>
+    <rect x="64" y="130" width="8" height="6" rx="1"/>
+  </g>
+  <!-- antenna trace (decor) -->
+  <path d="M28 168 Q80 150 132 168" stroke="#0f172a" stroke-width="2" fill="none" stroke-linecap="round"/>
+</svg>

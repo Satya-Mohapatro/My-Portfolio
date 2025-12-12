@@ -1,0 +1,15 @@
+
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+<g stroke="currentColor" stroke-width="18" fill="none">
+<rect x="60" y="200" width="120" height="120" rx="15">
+  <animate attributeName="stroke-opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite"/>
+</rect>
+<rect x="196" y="200" width="120" height="120" rx="15"/>
+<rect x="332" y="200" width="120" height="120" rx="15"/>
+<line x1="180" y1="260" x2="196" y2="260"/>
+<line x1="316" y1="260" x2="332" y2="260"/>
+<path d="M392 200 C420 160, 420 360, 392 320">
+  <animate attributeName="stroke-opacity" values="1;0.2;1" dur="3s" repeatCount="indefinite"/>
+</path>
+</g>
+</svg>
