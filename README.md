@@ -1,18 +1,18 @@
-# 💼 Personal Portfolio Website
+#  Personal Portfolio Website
 
 A sleek and responsive personal portfolio website built using **HTML**, **CSS**, and **JavaScript**, showcasing my skills, projects, and achievements in **Computer Science** and **Artificial Intelligence**.
 
-> 🚀 Designed to highlight my journey in Machine Learning, AI, and real-world problem-solving. Explore my featured projects and feel free to connect for collaboration or opportunities!
+>  Designed to highlight my journey in Machine Learning, AI, and real-world problem-solving. Explore my featured projects and feel free to connect for collaboration or opportunities!
 
 ---
 
-## 🌐 Live Preview
+##  Live Preview
 
 🔗 [View Portfolio Live](https://satyaaportfolio.netlify.app/)  
 
 ---
 
-## 🎯 Features
+##  Features
 
 - Responsive and mobile-friendly layout  
 - Clean, modern UI inspired by `satyaa-portfolio.netlify.app`  
@@ -25,7 +25,7 @@ A sleek and responsive personal portfolio website built using **HTML**, **CSS**,
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - HTML5  
 - CSS3  
@@ -37,7 +37,7 @@ A sleek and responsive personal portfolio website built using **HTML**, **CSS**,
 
 ---
 
-## 📂 Website Sections
+##  Website Sections
 
 - **Navbar** – Sticky nav with smooth scrolling  
 - **Hero** – Name, rotating tagline, call-to-action buttons  
@@ -51,7 +51,7 @@ A sleek and responsive personal portfolio website built using **HTML**, **CSS**,
 
 ---
 
-## 🖼️ Screenshots
+##  Screenshots
 
 ### 🔹 Home + Hero Section  
 ![Home](./images/SS1.png)
